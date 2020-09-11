@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+            var aantalSmall = prompt("Hoeveel aantal small pizza's wilt u?")
+            var aantalMedium = prompt("Hoeveel aantal medium pizza's wilt u?")
+            var aantalLarge = prompt("Hoeveel aantal large pizza's wilt u?")
+
+            const SmallPrize = 6
+            const MediumPrize = 8
+            const LargePrize = 10
+
+            TotalPrize = Number(aantalSmall) * Number(SmallPrize) + Number(aantalMedium) * Number(MediumPrize + Number(aantalLarge) + Number(LargePrize));
+            document.write("<h1>" + "Je hebt " + aantalSmall + " " + "small pizza's besteld. " + "<br>" + "</h1>");
+            document.write("<h1>" + "Je hebt " + aantalMedium + " " + "medium pizza's besteld. " + "<br>" + "</h1>");
+            document.write("<h1>" + "Je hebt " + aantalLarge + " " + "large pizza's besteld. " + "<br>" + "</h1>");
+                       
+            
+            
+            var Verzendkosten = 6.95
+            
+            if (TotalPrize < 50) {
+                document.write("<h2>" + "<br>" + "Totaal prijs pizza's: € " + TotalPrize + ",-" + "<br>" + "Verzendkosten: €" + Verzendkosten + ",-" + "<br>" + "Je totaal: €" + Math.abs(Verzendkosten + TotalPrize) + ",-" + "</h2")
+            }
+
+            else {
+                document.write("<h2>" + "<br>" + "Totaal prijs pizza's: € " + TotalPrize + ",-" + "<br>" + "Verzendkosten: €0,-" + "<br>" + "Je totaal: €" + TotalPrize + ",-" + "</h2")
+            }
+        </script>
+    </body>
+</html>

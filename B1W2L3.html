@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html>
+		<body>
+			<script type="text/javascript">
+			//Armin Versteeg, software developer DaVinci college.
+				document.write("tafels van 3 en 6:" + "<br>");  //schrijft "tafels van 3 en 6:" op.
+				for(i = 1; i < 11; i++) {              										//begin van loop.
+					var tafelVan3 = i*3;													//geeft aan wat "tafelVan3" is.
+					var tafelVan6 = i*6;													//geeft aan wat "tafelVan6" is.
+					document.write(tafelVan3 + "      ");									//schrijft de uitkomst van de tafel van 3 op.
+					document.write(tafelVan6 + "<br>");										//schrijft de uitkomst van de tafel van 6 op.
+				}																			//einde loop.
+
+
+
+				var number = 12;																//geeft aan wat "num" is.			
+				var number69 = 6;																//geeft aan wat "num2" is.
+				num = Math.abs(number69 + number);													//telt de waardes van "num2" en "num" bij elkaar op.
+				document.write("<br>" + "12+6=" + number + " ");								//schrijft "12+6='uitkomst'" op.
+					number = Math.abs(number * 10);												//doet de waarde van "num" x 10.
+				document.write("18x10=" + number + " ");										//schrijft "18x10= 'uitkomst'" op.
+					number = Math.abs(number / 5);												//doet de waarde van "num" : 5.
+				document.write("180:5=" + number + " ");										//schrijft "180:5= 'uitkomst'".
+					number = Math.abs(number - 12);												//doet de waarde van "num" - 12.
+				document.write("36-12=" + number);												//schrijft "36-12= 'antwoord'" op.
+
+
+
+				var start = 12;																//geeft aan wat "start" is.
+				var getal = prompt("Voer een getal in:");									//geeft aan wat "getal" is.
+				getal = Math.abs(start + getal);											//doet de waardes van "getal" + "start"
+
+				var getal420 = prompt("Voer een getal in:");									//geeft aan wat "getal420" is.
+				getal = Math.abs(getal * getal420);										//doet de waardes van "getal" x "getal420".
+
+				var getal69 = prompt("Voer een getal in:");									//geeft aan wat "getal3" is.
+				getal = Math.abs(getal / getal69);										//doet de waardes van "getal" : "getal3".
+
+				var getal42069 = prompt("Voer een getal in:");									//geeft aan wat "getal4" is.
+				getal = Math.abs(getal - getal42069);										//doet de waardes van "getal" - "getal4".
+				document.write("<br>" + "<br>" + "Uw eigen berekening: " + getal);			//schrijft het antwoord op.
+			</script>
+		</body>
+</html>
